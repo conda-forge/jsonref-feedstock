@@ -10,8 +10,9 @@ source:
   sha256: 56e0ce228798bdecadff865c142741b1ffdd57a5e9c40c40ec2b641d7c430ad3
 
 build:
-  number: 0
+  number: 1
   script: "{{ PYTHON }} -m pip install . --no-deps --ignore-installed --no-cache-dir -vvv "
+  noarch: python
 
 requirements:
   host:
@@ -34,3 +35,4 @@ about:
 extra:
   recipe-maintainers:
     - chapmanb
+    - marcelotrevisani
