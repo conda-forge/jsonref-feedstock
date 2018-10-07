@@ -1,5 +1,5 @@
 {% set name = "jsonref" %}
-{% set version = "0.1" %}
+{% set version = "0.2" %}
 
 package:
   name: "{{ name|lower }}"
@@ -7,10 +7,10 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 56e0ce228798bdecadff865c142741b1ffdd57a5e9c40c40ec2b641d7c430ad3
+  sha256: f3c45b121cf6257eafabdc3a8008763aed1cd7da06dbabc59a9e4d2a5e4e6697
 
 build:
-  number: 1
+  number: 0
   script: "{{ PYTHON }} -m pip install . --no-deps --ignore-installed --no-cache-dir -vvv "
   noarch: python
 
