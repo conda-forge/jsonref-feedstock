@@ -18,6 +18,7 @@ requirements:
   host:
     - pip
     - pdm-backend
+    - pdm-pep517
     - python >=3.7
   run:
     - python >=3.7
